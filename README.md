@@ -55,11 +55,7 @@ The CSN is first inverted to make it active low signal. This signal is then ANDe
 
 The first 8 FFs are DFRRQX1 with positive edge triggered clock and reset signal along with the input. These are connected in such a way to make it function like a SIPO shift register. In SIPO shift register, data is serially being fed to the first FF, which is then getting shifted in each clock pulse to the next FF. In each clock pulse, 8-bit parallel output (QA<7:0>) is obtained. The next 8 FFs are DFFQX1 with negative edge triggered clock and no reset signal. The connections are so designed to make it as a PISO shift register. Data is fed in a parallel manner to the 8-bit shift registers which takes a single clock pulse. The serial output – MISO is obtained hence from subsequent clock pulses.  
 
-The whole circuit along with the pins and signals are now ready to be molded into a symbol. The symbol is created hence and this symbol can be accessed in our test bench used for further verifying the results. The figure-2 shows the symbol of SPI schematic.
-
-|<img title="SPI Testbench" src="images/SPI_testbench.jpg">|  
-|:--:| 
-|*Figure 2: SPI Testbench*|
+The whole circuit along with the pins and signals are now ready to be molded into a symbol. The symbol is created hence and this symbol can be accessed in our test bench used for further verifying the results. 
 
 ### Write Operation
 
@@ -67,7 +63,7 @@ For writing data or address to the SRAM cell, we use the first 8 FFs which are D
 
 |<img title="Timing Diagram-Write" src="images/write_timing.jpg">|  
 |:--:| 
-|*Figure 3: Timing Diagram for Write Operation*|
+|*Figure 2: Timing Diagram for Write Operation*|
 
 ### Read Operation
 
@@ -75,15 +71,19 @@ The master sends the address of the SRAM cell from which the 8-bit data has to b
 
 |<img title="Timing Diagram-Read" src="images/read_timing.jpg">|  
 |:--:| 
-|*Figure 4: Timing Diagram for Read Operation*|
+|*Figure 3: Timing Diagram for Read Operation*|
 
 ## Circuit Simulation
 
 The testbench was simulated using Spectre for both write and read operations.
 
+|<img title="SPI Testbench" src="images/SPI_testbench.jpg">|  
+|:--:| 
+|*Figure 4: SPI Testbench*|
+
 ### Write Operation
 
-The RSN signal is set from low to high and CSN signal from high to low. MOSI is permanently set to 1. In the 1st clock cycle, Q0 is 1 and rest 7 output lines are 0. In the next cycle, Q0 and Q1 are 1 and rest are 0. Similarly, in each clock pulse, 1 bit shifting occurs. Hence, at the end of 8 clock pulses, 5-bit address is written to the SRAM cell. In the next 8 cycles, 8-bit data is transferred to the SRAM cell in similar manner. The MOSI input is 1 1 1 1 1 1 1 1. We observe from the figure that after the 8th positive edge of clock pulse, the sequence Q0 to Q7 is 1 1 1 1 1 1 1 1.
+The RSN signal is set from low to high and CSN signal from high to low. MOSI is permanently set to 1. In the 1st clock cycle, Q0 is 1 and rest 7 output lines are 0. In the next cycle, Q0 and Q1 are 1 and rest are 0. Similarly, in each clock pulse, 1 bit shifting occurs. So, at the end of 8 clock pulses, 5-bit address is written to the SRAM cell. In the next 8 cycles, 8-bit data is transferred to the SRAM cell in similar manner. The MOSI input is 1 1 1 1 1 1 1 1. We observe from the figure that after the 8th positive edge of clock pulse, the sequence Q0 to Q7 is 1 1 1 1 1 1 1 1.
 
 |<img title="Simulation-Write" src="images/write_simulation.jpg">|  
 |:--:| 
