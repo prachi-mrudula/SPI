@@ -104,7 +104,7 @@ i. Design Rule Checking (DRC)
 ii. Layout v/s Schematic (LVS)
 iii. Electronic Rule Checking (ERC)
 
-|<img title="SPI Layout" src="images/spi_layout.jpg">|  
+|<img title="SPI Layout" src="images/SPI_layout.jpg">|  
 |:--:| 
 |*Figure 7: Layout Design for SPI*|
 
