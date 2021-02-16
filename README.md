@@ -18,11 +18,10 @@ The master controls the clock frequency, polarity and phase w.r.t. data. The CPO
 
 |  SPI Modes |	CPOL | CPHA | Idle Clock  |	Data Rx/Tx from Master        |
 |:------------------:|:---------------:|:---------------:|:---------------:|:---------------:|
-| 0  | 0  | 0  | Low | Rising Edge Sample
-                       Falling Edge Data | 
-| 1  | 0  | 1  | Low |
-| 2  | 1  | 1  | High |
-| 3  | 1  | 0  | High |
+| 0  | 0  | 0  | Low | Rising Edge Sample, Falling Edge Data | 
+| 1  | 0  | 1  | Low | Falling Edge Sample, Rising Edge Data |
+| 2  | 1  | 1  | High | Falling Edge Sample, Rising Edge Data |
+| 3  | 1  | 0  | High | Rising Edge Sample, Falling Edge Data |
 
 Table 1: SPI Modes
 
