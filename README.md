@@ -43,8 +43,8 @@ SPI schematic consists of 16- bit shift registers as shown in figure 1. These sh
 6) RST (Reset) - This is a signal used to set the Flip-Flops to their predetermined state, either by the device itself or externally whenever required. The reset used here is an active high reset signal.
 7) GATES- Here, two types of gates, each two in number are used. Inverters are used to make the chip select line active low. AND gates are used too.
 8) DFFs- Two types of D-FFs are used.
-  - a) DFRRQX1- D-FF with reset signal and positive edge triggered. 8 of these are used.
-  - b) DFFQX1- D-FF with negative edge triggered and no reset. 8 of these are used.
+    - a) DFRRQX1- D-FF with reset signal and positive edge triggered. 8 of these are used.
+    - b) DFFQX1- D-FF with negative edge triggered and no reset. 8 of these are used.
 9) 2:1 MUX- Seven MUXes are used mainly for read operation. It transfers either of the two inputs I0 and I1 depending on the MUXEN signal and provides the output which is input to the flip-flops.
 10) D<7:0> - These are 8-bit data lines (D0, D1, D2, D3, D4, D5, D6, D7) that are parallel inputs to the flip-flops through MUX. They come from the SRAM cell during READ operation.
 11) QA<7:0> - These are 8-bit output lines (QA0, QA1, QA2, QA3, QA4, QA5, QA6, QA7) from DFRRQX1. These are used in WRITE operation for writing 8-bit into the SRAM cell.
