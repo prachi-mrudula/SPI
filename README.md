@@ -118,14 +118,14 @@ We would like to thank our institution for equipping us with Advanced VLSI Lab f
 
 ## References
 
-[1] Kang S., Leblebici Y., “CMOS Digital Integrated Circuits: Analysis and Design”, 2nd Ed., 2003
-[2] Hodges and Jackson, “Chapter-8: Semiconductor Memory Design”, 3rd Ed, McGraw-Hill, 2003
-[3] A. Pavlov, “CMOS SRAM” – Chapter-2, Springer, 2008
-[4] N. H. E. Weste, D. Harris, A. Banerjee, “CMOS VLSI Design”, Pearson, 2016
-[5] J. Baker, “Chapter-16: Memory Circuits”, Wiley, 2008
-[6] Frederic Leens, "An introduction to SPI and I2C protocol," IEEE Instrumentation and Measurement magazine, February 2009.
-[7] Jianlong Zhang, Jiwei Wang, Chunyu Wu, Wenjing Zhang, "The design and realization of a comprehensive SPI interface controller," Second International Conference on Mechanic Automation and Control Engineering (MACE), 2011 IEEE.
-[8] Motorola Inc., "SPI Block Guide V03.06," March 2003.
-[9] Anand N, George Joseph, Suwin Sam Oommen, R Dhanabal, "Design and implementation of a high speed Serial Peripheral Interface", Advances in Electrical Engineering (ICAEE) 2014 International Conference on, pp. 1-3, 2014.
-[10] Lattice Semiconductor Inc., "SPI Slave Controller V 01.0," October 2012.
+[1] Kang S., Leblebici Y., “CMOS Digital Integrated Circuits: Analysis and Design”, 2nd Ed., 2003  
+[2] Hodges and Jackson, “Chapter-8: Semiconductor Memory Design”, 3rd Ed, McGraw-Hill, 2003  
+[3] A. Pavlov, “CMOS SRAM” – Chapter-2, Springer, 2008  
+[4] N. H. E. Weste, D. Harris, A. Banerjee, “CMOS VLSI Design”, Pearson, 2016  
+[5] J. Baker, “Chapter-16: Memory Circuits”, Wiley, 2008  
+[6] Frederic Leens, "An introduction to SPI and I2C protocol," IEEE Instrumentation and Measurement magazine, February 2009.  
+[7] Jianlong Zhang, Jiwei Wang, Chunyu Wu, Wenjing Zhang, "The design and realization of a comprehensive SPI interface controller," Second International Conference on Mechanic Automation and Control Engineering (MACE), 2011 IEEE.  
+[8] Motorola Inc., "SPI Block Guide V03.06," March 2003.  
+[9] Anand N, George Joseph, Suwin Sam Oommen, R Dhanabal, "Design and implementation of a high speed Serial Peripheral Interface", Advances in Electrical Engineering (ICAEE) 2014 International Conference on, pp. 1-3, 2014.  
+[10] Lattice Semiconductor Inc., "SPI Slave Controller V 01.0," October 2012.  
 
